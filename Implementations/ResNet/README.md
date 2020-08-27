@@ -85,7 +85,7 @@ The outputs of both streams are then added up to a new tensor on which a *Rectif
 
 As one can see the only difference between the two blocks is the existence of the Convolution-Batch Normalization sub-block at the right stream.
 
-** ResNet 34 --> No Projection Block,  ResNet50 --> Projection Block
+** ResNet 34 --> No Projection Block,  ResNet50 --> Projection Block <br>
 The reason we need this Convolution layer is:
 - To change the number of filters (feature maps) of the tensor after each block. --> Change the No of Filters as the Final Block in Left Stream in Projection Block
 - To change the size of the tensor after each block. --> Change the Stride Size in Left Stream ( if S = 2 in 1st Conv. Block in Right Stream, then S = 2 in Left Stream Block ( P )
